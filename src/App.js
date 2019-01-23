@@ -19,7 +19,7 @@ class App extends Component {
     this.setState({ books: [], loading: true });
     axios.get('json/data.json').then(data => {
       setTimeout( () => {
-        console.log('hello');
+        console.log('onClick Response');
         this.setState({
           loading: false,
           books: data.data
